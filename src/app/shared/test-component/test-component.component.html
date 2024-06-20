@@ -1,3 +1,9 @@
 <p>test-component works!</p>
 
 <p>{{ "Soy un texto " | example }}</p>
+
+<div class="box" appExample>Soy una caja</div>
+
+<h1 *ngIf="true">Soy un titulo</h1>
+
+<div class="box" *ngFor="let item of list">Bucle {{ item }}</div>

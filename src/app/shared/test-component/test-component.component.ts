@@ -8,6 +8,8 @@ import { ExampleService } from '../services/example.service';
 })
 export class TestComponentComponent {
   private service: ExampleService = inject(ExampleService);
+
+  list: number[] = [0, 1, 2, 3];
   constructor() {
     console.log(this.service.getData());
   }
